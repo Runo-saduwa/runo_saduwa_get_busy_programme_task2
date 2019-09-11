@@ -1,0 +1,17 @@
+{
+  "name": "runo_saduwa_get_busy_programme_task2",
+  "version": "1.0.0",
+  "description": "Simple App to consume API",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Runo Saduwa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "express": "^4.17.1",
+    "hbs": "^4.0.4"
+  }
+}
