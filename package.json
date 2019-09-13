@@ -2,9 +2,9 @@
   "name": "runo_saduwa_get_busy_programme_task2",
   "version": "1.0.0",
   "description": "Simple App to consume API",
-  "main": "src/app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/app.js"
+    "start": "node server.js"
   },
   "author": "Runo Saduwa",
   "license": "ISC",

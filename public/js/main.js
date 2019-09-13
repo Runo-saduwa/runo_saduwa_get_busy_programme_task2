@@ -1,18 +1,13 @@
-
-
 let profile = document.querySelector('#profile');
-let button = document.querySelector('button');
 
 window.addEventListener('DOMContentLoaded', () => {
-    profile.innerHTML = `<h1>Loading...</h1>`
-    fetch(`http://localhost:3000/profile`).then((response) => {
-        response.json()
-        .then(data => {
-            if(data.error){
-                console.log(data.error)
-                
-            }else {
-              profile.innerHTML = `
+	profile.innerHTML = `<h1>Loading...</h1>`;
+	fetch(`http://localhost:3000/profile`).then((response) => {
+		response.json().then((data) => {
+			if (data.error) {
+				console.log(data.error);
+			} else {
+				profile.innerHTML = `
               <div>
               <h4>Account Details</h4>
               <hr>
@@ -34,9 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
               <hr>
              </div>
 
-              `
-            }
-        })
+              `;
+			}
+		});
 	});
-})
-
+});
